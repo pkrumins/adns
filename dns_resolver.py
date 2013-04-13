@@ -4,7 +4,7 @@ from time import time
 hosts=list(sys.argv)
 hosts.pop(0)
 ar = AsyncResolver(
-           list(sys.argv)
+           hosts
     )
 start = time()
 resolved = ar.resolve()
